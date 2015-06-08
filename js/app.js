@@ -1,0 +1,1 @@
+var gituserSearch = angular.module('GitUserSearch', ['ngResource'])
