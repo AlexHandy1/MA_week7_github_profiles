@@ -1,0 +1,21 @@
+{
+  "name": "week7_github_profile",
+  "version": "0.0.0",
+  "authors": [
+    "Alex Handy <handy437@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.4",
+    "angular": "~1.4.0",
+    "angular-resource": "~1.4.0"
+  }
+}
