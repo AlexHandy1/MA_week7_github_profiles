@@ -5,6 +5,7 @@ gituserSearch.controller('GitUserSearchController', ['Search', function(Search) 
       Search.query(self.searchTerm)
       .then(function(response) {
         self.searchResult = response.data;
+        console.log(response.data.items[0])
       })
     };
 }]);

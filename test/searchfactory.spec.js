@@ -7,11 +7,10 @@ describe('factory: Search', function(){
     search = Search;
   }));
 
-  var token = '736ec2b220d58eefcaaa306b189c798e4981ceb5';
   beforeEach(inject(function($httpBackend) {
       httpBackend = $httpBackend;
       httpBackend
-        .expectGET("https://api.github.com/search/users?access_params=" + token + "q=hello")
+        .expectGET("https://api.github.com/users?access_params='736ec2b220d58eefcaaa306b189c798e4981ceb5"+ "q=hello")
         .respond(
             {items: items}
         )
@@ -26,5 +25,4 @@ describe('factory: Search', function(){
     .then(function(response){
       expect(response.data).toEqual(items)
   });
-
 });
