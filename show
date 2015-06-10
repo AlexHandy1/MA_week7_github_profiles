@@ -1,0 +1,6 @@
+MongoDB shell version: 3.0.3
+connecting to: dbs
+2015-06-10T18:17:14.895+0100 W NETWORK  Failed to connect to 127.0.0.1:27017, reason: errno:61 Connection refused
+2015-06-10T18:17:14.897+0100 E QUERY    Error: couldn't connect to server 127.0.0.1:27017 (127.0.0.1), connection attempt failed
+    at connect (src/mongo/shell/mongo.js:179:14)
+    at (connect):1:6 at src/mongo/shell/mongo.js:179
