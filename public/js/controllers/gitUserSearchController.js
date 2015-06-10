@@ -1,4 +1,4 @@
-gituserSearch.controller('GitUserSearchController', ['Search', function(Search) {
+gituserSearch.controller('GitUserSearchController', ['Search', 'Token',function(Search, Token) {
   var self = this
 
   self.doSearch = function(){
@@ -6,6 +6,11 @@ gituserSearch.controller('GitUserSearchController', ['Search', function(Search) 
       .then(function(response) {
         self.searchResult = [response.data];
         console.log(response.data)
+      })
+
+      Token.query()
+      .then(function(response) {
+        console.log(response.data.token)
       })
     };
 }]);
